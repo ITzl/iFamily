@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="Ij9-cy-fmA" customClass="TimeTwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ij9-cy-fmA" id="1rk-gn-PV9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-Hj-L0m">
+                        <rect key="frame" x="241.5" y="8" width="70.5" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hSr-Hj-L0m" secondAttribute="height" id="tXP-Y8-gT9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tXP-Y8-gT9"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-VS-Xbb">
+                        <rect key="frame" x="90.5" y="8" width="70.5" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MPe-VS-Xbb" secondAttribute="height" id="eb8-Km-8NF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eb8-Km-8NF"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ekI-1i-fbr">
+                        <rect key="frame" x="166" y="8" width="70.5" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ekI-1i-fbr" secondAttribute="height" id="wto-Po-cql"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wto-Po-cql"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH9-HQ-OeD">
+                        <rect key="frame" x="67.5" y="0.0" width="1" height="85.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="y1H-aS-iKm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ekI-1i-fbr" firstAttribute="height" secondItem="MPe-VS-Xbb" secondAttribute="height" id="0L3-VQ-vsh"/>
+                    <constraint firstItem="ekI-1i-fbr" firstAttribute="leading" secondItem="MPe-VS-Xbb" secondAttribute="trailing" constant="5" id="0Np-ox-Pt2"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="leading" secondItem="ekI-1i-fbr" secondAttribute="trailing" constant="5" id="9CW-a3-TTq"/>
+                    <constraint firstItem="fH9-HQ-OeD" firstAttribute="top" secondItem="1rk-gn-PV9" secondAttribute="topMargin" constant="-8" id="Dlv-8L-Uhm"/>
+                    <constraint firstItem="MPe-VS-Xbb" firstAttribute="centerY" secondItem="ekI-1i-fbr" secondAttribute="centerY" id="Ds5-PP-3eM"/>
+                    <constraint firstItem="MPe-VS-Xbb" firstAttribute="leading" secondItem="fH9-HQ-OeD" secondAttribute="trailing" constant="22" id="Jkw-cQ-UCC"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="centerY" secondItem="1rk-gn-PV9" secondAttribute="centerY" id="V6B-a3-bX0"/>
+                    <constraint firstItem="MPe-VS-Xbb" firstAttribute="width" secondItem="MPe-VS-Xbb" secondAttribute="height" id="bZx-Uf-0r4"/>
+                    <constraint firstItem="ekI-1i-fbr" firstAttribute="width" secondItem="ekI-1i-fbr" secondAttribute="height" id="cf0-As-mcv"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="width" secondItem="1rk-gn-PV9" secondAttribute="width" id="e2Q-lf-GcI"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="width" secondItem="hSr-Hj-L0m" secondAttribute="height" id="eS0-Xb-uTr"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="height" secondItem="MPe-VS-Xbb" secondAttribute="height" id="goR-HZ-uf1"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="width" secondItem="1rk-gn-PV9" secondAttribute="width" multiplier="0.22" id="hEe-dL-Z7Q"/>
+                    <constraint firstItem="ekI-1i-fbr" firstAttribute="width" secondItem="MPe-VS-Xbb" secondAttribute="width" id="jPo-ao-JIZ"/>
+                    <constraint firstItem="ekI-1i-fbr" firstAttribute="centerY" secondItem="hSr-Hj-L0m" secondAttribute="centerY" id="q77-aE-uQ9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hSr-Hj-L0m" secondAttribute="trailing" id="t29-uO-jZi"/>
+                    <constraint firstItem="hSr-Hj-L0m" firstAttribute="width" secondItem="MPe-VS-Xbb" secondAttribute="width" id="uUm-fa-wVl"/>
+                    <constraint firstItem="fH9-HQ-OeD" firstAttribute="bottom" secondItem="1rk-gn-PV9" secondAttribute="bottomMargin" constant="8" id="zPJ-k4-UYW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="e2Q-lf-GcI"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView1" destination="MPe-VS-Xbb" id="6Hf-Vz-Aq4"/>
+                <outlet property="imgView2" destination="ekI-1i-fbr" id="HtH-Vv-RQ9"/>
+                <outlet property="imgView3" destination="hSr-Hj-L0m" id="beW-RS-5Gv"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="9"/>
+        </tableViewCell>
+    </objects>
+</document>
